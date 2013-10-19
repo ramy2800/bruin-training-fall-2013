@@ -4,7 +4,7 @@
 {% block extra-css %}
 <style type="text/css">
     .bar {
-        height: 30px;
+        height: 50px;
         display:inline-block;
         float:left;
         margin:1px 0;
@@ -16,6 +16,7 @@
         background: purple;
     }
     .bar-label {
+        color:blue;
         display:inline-block;
         float:left;
         margin: 6px 0 0 6px;
@@ -25,6 +26,15 @@
     }
     .clear {
         clear:both;
+    }
+    h1{
+        color:blue;
+    }
+    h4{
+        color:green;
+    }
+    .table{
+        color:green;
     }
 </style>
 {% endblock %}
@@ -54,7 +64,7 @@
         </tbody>
     </table>
 
-    <h2>Money by Prop.</h2>
+    <h2 >Money by Prop.</h2>
     
     {% for i in summary_data %}
     <h4>Prop. {{ i.prop }}</h4>
